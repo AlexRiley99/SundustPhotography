@@ -1,0 +1,41 @@
+:root{
+    --darkBlue: #021836;
+    --button_hover: #001630;
+    --button_active: #083976;
+    --button_text: #fafaf2;
+    --background_main: #faf0ad;
+    --background_accent: #162601;
+    --links: #030247;
+}
+
+html, body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body{
+    background-image: 
+        radial-gradient(circle, 
+                        var(--background_main) 70%, 
+                        var(--background_accent) 100%); /*circular gradient with smoothly blended colors*/
+    background-size: cover;
+    background-position: center; /*background covers the entire screen and gradient is centered*/
+    height: 100vh; /*full viewport height*/
+    background-repeat: no-repeat; /*no repeating background*/
+}
+
+button{
+    background-color: var(--darkBlue);
+    color: var(--button_text);
+    border-radius: 10px;
+    padding: 5px;
+}
+
+h1{
+    text-align: center;
+    text-decoration: underline;
+    font-weight: bold;
+    color: var(--darkBlue);
+}
+
