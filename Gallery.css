@@ -1,4 +1,40 @@
-img {
-    height: auto;
-    width: 200px;
+.imgTall{
+    height: 700px;
+    width: 100%;
+    max-width: 500px;
+    grid-column: span 1; 
+    grid-row: span 2;
+}
+.imgWide{
+    height: 345px;
+    width: 100%;
+    max-width: 500px;
+    grid-column: span 1;
+    grid-row: span 1;
+}
+
+.imgContainer{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /*2 equal columns*/
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    justify-content: space-around; /* Space items evenly */
+    column-gap: 5px;
+    row-gap: 5px;
+    margin: auto;
+    max-width: 100%; /* Ensure the container doesn’t exceed the screen width */
+    box-sizing: border-box; /* Prevent padding/margin from expanding beyond container */
+    width: 100%; 
+    max-width: 1200px; /* Maximum width for large screens */
+}
+
+@media (max-width: 768px){
+    #imgContainer{
+        grid-template-columns: 1fr; /*Stack images in one column on small screens*/
+    }
+    /*On smaller screens, make images full width*/
+    #imgContainer .imgTall, 
+    #imgContainer .imgWide{
+        width: 100%;
+        height: auto; /* Maintain aspect ratio */
+    }
 }
