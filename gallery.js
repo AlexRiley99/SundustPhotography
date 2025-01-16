@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
     // Get the container where the images are displayed and the expanded image container
-    const imgContainer = document.querySelector('.imgContainer');
+    const imgContainer = document.querySelector('#imgContainer');
     const expandedImageContainer = document.getElementById('expandedImageContainer');
     const expandedImage = document.getElementById('expandedImage');
     const closeBtn = document.getElementById('closeBtn');
