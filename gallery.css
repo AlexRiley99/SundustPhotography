@@ -62,7 +62,6 @@
 @media (max-width: 1024px){
     #imgContainer{
         grid-template-columns: 1fr; /*Stack images in one column on small screens*/
-        margin: auto;
     }
     #imgContainer .imgTall, 
     #imgContainer .imgWide{
@@ -75,7 +74,6 @@
 @media (max-width: 768px){
     #imgContainer{
         grid-template-columns: 1fr; /*Stack images in one column on small screens*/
-        margin: auto;
     }
     /*On smaller screens, make images full width*/
     #imgContainer .imgTall, 
