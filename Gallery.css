@@ -29,15 +29,15 @@
 
 #closeBtn{
     position: absolute;
-    top: 20px; /* Adjust to position the button 20px from the top of the image */
-    left: 20px; /* Adjust to position the button 20px from the left side of the image */
+    top: 5%; /* Adjust to position the button 20px from the top of the image */
+    left: 5%; /* Adjust to position the button 20px from the left side of the image */
     font-size: 40px;
     color: white;
     cursor: pointer;
     z-index: 1100; /* Ensure the close button appears on top of the image */
-    background-color: rgba(0, 0, 0, 0.5); /* Optional: makes the button stand out */
+    background-color: rgba(0, 0, 0, 0.5); 
     padding: 5px;
-    border-radius: 50%; /* Makes the close button circular */
+    border-radius: 100%; /* Makes the close button circular */
 }
 #expandedImageContainer {
     position: fixed;
