@@ -27,9 +27,41 @@
     max-width: 1200px; /* Maximum width for large screens */
 }
 
+#closeBtn{
+    position: absolute;
+    top: 20px; /* Adjust to position the button 20px from the top of the image */
+    left: 20px; /* Adjust to position the button 20px from the left side of the image */
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+    z-index: 1100; /* Ensure the close button appears on top of the image */
+    background-color: rgba(0, 0, 0, 0.5); /* Optional: makes the button stand out */
+    padding: 5px;
+    border-radius: 50%; /* Makes the close button circular */
+}
+#expandedImageContainer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+#expandedImage{
+    max-width: 90%;
+    max-height: 90%;
+    margin: 0 auto;
+}
+
 @media (max-width: 768px){
     #imgContainer{
         grid-template-columns: 1fr; /*Stack images in one column on small screens*/
+        cursor: pointer;
+        transition: transform 0.2s ease;
     }
     /*On smaller screens, make images full width*/
     #imgContainer .imgTall, 

@@ -40,18 +40,16 @@ button{
     padding: 10px;
     text-align: center;
     margin: auto;
+    text-decoration: none;
+    color: var(--button_text);
 }
 button:hover{
     background-color: var(--button_hover);
-    transition: background-color 0.15s;
+    transition: background-color 0.15s ease;
 }
 button:active{
     background-color: var(--button_active);
-    transition: background-color 0.15s;
-}
-.buttonText{
-    text-decoration: none;
-    color: var(--button_text);
+    transition: background-color 0.15s ease;
 }
 
 h1{
