@@ -2,3 +2,11 @@
     text-align: center;
     margin: auto;
 }
+
+#homePageImg{
+    width: 20%;
+    height: auto;
+    margin: auto;
+    display: block;
+    text-align: center;
+}
