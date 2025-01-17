@@ -29,10 +29,13 @@ body{
 .navbar_div{
     text-align: center;
     margin: auto;
-    padding: 10px;
     border-bottom:5px double var(--darkBlue);
+    padding: 5px;
 }
-
+.navBtn{
+    height: 100%;
+    width: 100px;
+}
 button{
     background-color: var(--darkBlue);
     color: var(--button_text);
