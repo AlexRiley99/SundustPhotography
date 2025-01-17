@@ -1,0 +1,8 @@
+#aboutDiv{
+    padding-left: 20%;
+    padding-right: 20%;
+}
+#hiImDerek, #quote{
+    color: rgb(83, 33, 2);
+    font-style: italic;
+}
