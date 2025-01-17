@@ -37,8 +37,8 @@ document.addEventListener('DOMContentLoaded', function () {
     setInterval(changeImage, 3000);
 
     // Add click event listener to the container
-    imgContainer.addEventListener('click', function () {
+    img_div.addEventListener('click', function () {
         // Redirect the user to the gallery page when the container is clicked
-        window.location.href = 'gallery.html';
+        window.location.href = 'gallery';
     });
 });
