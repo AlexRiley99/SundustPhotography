@@ -37,6 +37,13 @@ body{
     height: 100%;
     width: 100px;
 }
+
+@media (max-width: 768px){
+    .navBtn{
+        grid-template-columns: 1fr;
+    }
+}
+
 button{
     background-color: var(--darkBlue);
     color: var(--button_text);
