@@ -16,6 +16,7 @@ html, body{
 }
 
 body{
+    padding-top: 60px;
     background-image: 
         radial-gradient(circle, 
                     rgb(249, 213, 152, 0.75) 70%, 
@@ -29,6 +30,11 @@ body{
 }
 
 .navbar_div{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
     text-align: center;
     margin: auto;
     border-bottom:5px double var(--darkBlue);
