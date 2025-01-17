@@ -46,6 +46,20 @@ body{
     margin: 1px;
 }
 
+@media (max-width: 768px){
+    .navbar_div{
+        grid-template-columns: 1fr; /*Stack buttons in one column on small screens*/
+    }
+    .navBtn{
+        width: 100%;
+        height: auto; 
+        margin: auto;
+    }
+    body{
+        padding-top: 180px;
+    }
+}
+
 button{
     background-color: var(--darkBlue);
     color: var(--button_text);
