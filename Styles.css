@@ -35,13 +35,7 @@ body{
 }
 .navBtn{
     height: 100%;
-    width: 100px;
-}
-
-@media (max-width: 768px){
-    .navBtn{
-        grid-template-columns: 1fr;
-    }
+    width: 24%;
 }
 
 button{
