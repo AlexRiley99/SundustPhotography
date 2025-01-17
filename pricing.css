@@ -1,0 +1,41 @@
+:root{
+    --darkBlue: #021836;
+    --emphasis: rgb(83, 33, 2);
+}
+#gridDiv{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    flex-wrap: wrap; 
+    justify-content: space-around; 
+    column-gap: 5px;
+    row-gap: 5px;
+}
+#startUp, #firstTen, #remaining{
+    text-align: center;
+    margin: auto;
+    font-family: Georgia;
+    text-decoration: none;
+}
+#firstTen{
+    color: var(--darkBlue);
+}
+#startUp, #remaining{
+    color: var(--emphasis);
+}
+h2, h3{
+    text-decoration: underline;
+    color: var(--darkBlue);
+}
+#packagesDiv, #addOnDiv{
+    margin-left: 30%;
+    grid-row: span 1;
+    grid-column: span 1;
+}
+#promoDiscount{
+    margin-right: 30%;
+    grid-row: span 2;
+    grid-column: span 1;
+}
+#promoDiscount h5{
+    color: var(--emphasis);
+}
