@@ -18,8 +18,9 @@ html, body{
 body{
     background-image: 
         radial-gradient(circle, 
-                        var(--background_main) 70%, 
-                        var(--background_accent) 100%); /*circular gradient with smoothly blended colors*/
+                    rgb(249, 213, 152, 0.75) 70%, 
+                    rgb(85, 48, 3, 0.9) 100%),
+                        url('Images/filmGrain.jpg'); /*circular gradient overlayed onto image*/
     background-size: cover;
     background-position: center; /*background covers the entire screen and gradient is centered*/
     height: 100%; /*full viewport height*/
