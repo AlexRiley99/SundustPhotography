@@ -1,5 +1,5 @@
 :root{
-    --darkBlue: #021836;
+    --darkBlue: #02285e;
     --button_hover: #023e86;
     --button_active: #6a98d1;
     --button_text: #fafaf2;
@@ -36,6 +36,7 @@ body{
 .navBtn{
     height: 100%;
     width: 24%;
+    margin: 1px;
 }
 
 button{
@@ -50,6 +51,7 @@ button{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight: bold;
     font-size: 90%;
+    opacity: 0.6;
 }
 button:hover{
     background-color: var(--button_hover);
