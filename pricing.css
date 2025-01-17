@@ -2,6 +2,9 @@
     --darkBlue: #021836;
     --emphasis: rgb(83, 33, 2);
 }
+ul li{
+    list-style-type: none;
+}
 #gridDiv{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -38,4 +41,28 @@ h2, h3{
 }
 #promoDiscount h5{
     color: var(--emphasis);
+}
+
+@media (max-width: 1024px){
+    #gridDiv{
+        grid-template-columns: 1fr; /*Stack text in one column on small screens*/
+    }
+    #packagesDiv, #addOnDiv, #promoDiscount{
+        width: 100%;
+        height: auto; 
+        margin: auto;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px){
+    #gridDiv{
+        grid-template-columns: 1fr; /*Stack text in one column on small screens*/
+    }
+    #packagesDiv, #addOnDiv, #promoDiscount{
+        width: 100%;
+        height: auto; 
+        margin: auto;
+        text-align: center;
+    }
 }
