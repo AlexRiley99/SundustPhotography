@@ -26,14 +26,13 @@ document.addEventListener('DOMContentLoaded', function () {
             imgElement.classList.remove("fade-out"); // Remove fade-out class
             imgElement.classList.add("fade"); // Add fade-in class for smooth transition
 
-            // Optional: Remove the fade class after 2 seconds to reset the state
             setTimeout(() => {
                 imgElement.classList.remove("fade");
             }, 2000); // 2 seconds to allow for fade-in to complete
         }, 2000); // 2 seconds to allow for fade-out to complete
     }
 
-    // Change image every 5 seconds
+    // Change image every 3 seconds
     setInterval(changeImage, 3000);
 
     // Add click event listener to the container
