@@ -29,34 +29,39 @@
     transition: transform 0.2s ease;
 }
 
-#closeBtn{
-    position: absolute;
-    top: 5%; /* Adjust to position the button 20px from the top of the image */
-    left: 5%; /* Adjust to position the button 20px from the left side of the image */
-    font-size: 40px;
-    color: white;
-    cursor: pointer;
-    z-index: 1100; /* Ensure the close button appears on top of the image */
-    background-color: rgba(0, 0, 0, 0.5); 
-    padding: 5px;
-    border-radius: 100%; /* Makes the close button circular */
-}
-#expandedImageContainer {
+#overlay {
+    display: none; 
     position: fixed;
     top: 0;
     left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.8);
-    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9); 
+    z-index: 1000; 
     justify-content: center;
     align-items: center;
-    z-index: 999;
 }
-#expandedImage{
+
+#expandedImage {
     max-width: 90%;
     max-height: 90%;
-    margin: 0 auto;
+    border: 5px solid white;
+    border-radius: 10px;
+}
+
+#closeButton {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+#closeButton:hover {
+    color: #ccc;
 }
 
 @media (max-width: 1024px){

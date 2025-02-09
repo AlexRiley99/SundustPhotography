@@ -1,23 +1,35 @@
-document.addEventListener('DOMContentLoaded', function () {
-    // Get the container where the images are displayed and the expanded image container
-    const imgContainer = document.querySelector('#imgContainer');
-    const expandedImageContainer = document.getElementById('expandedImageContainer');
+document.addEventListener('DOMContentLoaded', () => {
+    const overlay = document.getElementById('overlay');
     const expandedImage = document.getElementById('expandedImage');
-    const closeBtn = document.getElementById('closeBtn');
+    const closeButton = document.getElementById('closeButton');
+    const galleryImages = document.querySelectorAll('#imgContainer img'); //Select the entire gallery
 
-    // Event listener for clicking on images in the container
-    imgContainer.addEventListener('click', function (e) {
-        if (e.target.tagName.toLowerCase() === 'img') {
-            // Set the source of the expanded image to the clicked image's source
-            expandedImage.src = e.target.src;
-            // Show the expanded image container
-            expandedImageContainer.style.display = 'flex';
+    //Function to expand an image
+    function expandImage(imageSrc) {
+        expandedImage.src = imageSrc;
+        overlay.style.display = 'flex';
+    }
+
+    //Function to close the expanded image
+    function closeImage() {
+        overlay.style.display = 'none';
+    }
+
+    //Add click event to the close button
+    closeButton.addEventListener('click', closeImage);
+
+    //Add click event to the overlay to close the image
+    overlay.addEventListener('click', (event) => {
+        if (event.target === overlay) {
+            closeImage();
         }
     });
 
-    // Event listener for clicking the close (X) button
-    closeBtn.addEventListener('click', function () {
-        // Hide the expanded image container
-        expandedImageContainer.style.display = 'none';
+    //Add click event to each gallery image
+    galleryImages.forEach(image => {
+        image.addEventListener('click', () => {
+            expandImage(image.src);
+        });
     });
+
 });
