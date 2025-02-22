@@ -1,9 +1,9 @@
 document.addEventListener('DOMContentLoaded', function () {
     // Array of image URLs to cycle through
     const images = [
-        "Images/CameraWithNotebook.jpg",
+        "Images/MellowGlow/Mellowgllowph-38.jpg",
         "Images/Bagheera.jpeg",
-        "Images/Grass.jpg",
+        "Images/MellowGlow/Mellowgllowph-24.jpg",
         "Images/MistyRoad.jpeg",
         "Images/Bridge.jpg"
     ];
