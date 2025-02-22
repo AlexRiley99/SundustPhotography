@@ -19,3 +19,12 @@
 .fade-out{
     opacity: 0;
 }
+
+#bookNow{
+    border: 5px double #02285e;
+    text-align: center;
+    margin: auto;
+    width: 50%;
+    border-radius: 10px;
+    padding-bottom: 10px;
+}

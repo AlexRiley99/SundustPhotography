@@ -6,3 +6,11 @@
     color: rgb(83, 33, 2);
     font-style: italic;
 }
+
+#contactInfoDiv{
+    border: 5px double #02285e;
+    text-align: center;
+    margin: auto;
+    width: 50%;
+    border-radius: 10px;
+}
