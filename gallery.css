@@ -2,7 +2,7 @@
     height: 700px;
     width: 100%;
     max-width: 500px;
-    grid-column: span 1; 
+    grid-column: 1; 
     grid-row: span 2;
 }
 .imgWide{
@@ -64,6 +64,35 @@
     color: #ccc;
 }
 
+#jumpToDiv{
+    border: 5px double #02285e;
+    border-radius: 10px;
+    text-align: center;
+    width: 50%;
+    margin: auto;
+    padding-bottom: 10px;
+}
+a{
+    list-style-type: none;
+    text-decoration: none;
+    color: #02285e;
+    font-weight: bold;
+    transition: color 0.5s;
+}
+a:hover{
+    color: #023e86;
+}
+a:active{
+    color: #6a98d1;
+}
+
+.category, p{
+    text-align: center;
+    grid-column: 1;
+}
+p{
+    margin: 0;
+}
 @media (max-width: 1024px){
     #imgContainer{
         grid-template-columns: 1fr; /*Stack images in one column on small screens*/
