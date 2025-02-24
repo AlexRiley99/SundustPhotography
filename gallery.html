@@ -8,6 +8,7 @@
     <script src="gallery.js"></script>
 </head>
 <body>
+    <div id="topOfPage"></div>
     <div class="navbar_div">
         <navbar>
             <button class="navBtn" onclick="window.location.href='index'">Home</button>
@@ -17,60 +18,125 @@
         </navbar>
     </div>
     <h1>Gallery</h1>
-    <div id="jumpToDiv">
-        <h2>Jump To</h2>
-            <a href="#events">Events</a><br>
-            <a href="#animals">Animals</a><br>
-            <a href="#nature">Nature and Landscapes</a><br>
-            <a href="#manmade">Manmade Structures and Objects</a><br>
-    </div>
 
-    <div id="overlay">
-        <img id="expandedImage" src="">
-        <button id="closeButton">&#10005;</button>
-    </div>
+        <div id="jumpToDiv">
+            <h2>Jump To</h2>
+                <a href="#events">Events | </a>
+                <a href="#animals">Animals | </a>
+                <a href="#nature">Nature and Landscapes | </a>
+                <a href="#manmade">Manmade Structures and Objects | </a>
+                <a href="#people">People</a>
+        </div>
 
-    <div id="imgContainer">
-        <h2 id="events" class="category">Events</h2>
-        <p>Valentine's Day Glow Party | Mellow and Play Cafe | February 14, 2025</p>
-        <img class="imgTall" src="Images/MellowGlow/Mellowgllowph-09.jpg" alt="A child jumping on a floor piano">
-        <img class="imgWide" src="Images/MellowGlow/Mellowgllowph-38.jpg" alt="The front of the Mellow and Play Cafe building">
-        <img class="imgWide" src="Images/MellowGlow/Mellowgllowph-03.jpg" alt="Mellow and Play Cafe lobby">
-        <img class="imgTall" src="Images/MellowGlow/Mellowgllowph-05.jpg" alt="A child leaving a room filled with balloons">
-        <img class="imgWide" src="Images/MellowGlow/Mellowgllowph-04.jpg" alt="Lights projected onto the ceiling near the 'pick up here' sign at Mellow and Play Cafe">
-        <img class="imgWide" src="Images/MellowGlow/Mellowgllowph-06.jpg" alt="A table set up with coloring pages and crayons">
-        <img class="imgTall" src="Images/MellowGlow/Mellowgllowph-11.jpg" alt="A child in front of the photo backdrop">
-        <img class="imgWide" src="Images/MellowGlow/Mellowgllowph-12.jpg" alt="A string of neon circles under a blacklight">
-        <img class="imgWide" src="Images/MellowGlow/Mellowgllowph-24.jpg" alt="Lights on the ceiling above the coffee ordering/pickup area at Mellow and Play Cafe">
-        <img class="imgTall" src="Images/MellowGlow/Mellowgllowph-16.jpg" alt="Father and son posing in front of the photo backdrop">
-        <img class="imgWide" src="Images/MellowGlow/Mellowgllowph-17.jpg" alt="Neon letters under a blacklight">
-        <img class="imgWide" src="Images/MellowGlow/Mellowgllowph-25.jpg" alt="Children posing in front of the photo backdrop">
-        <img class="imgTall" src="Images/MellowGlow/Mellowgllowph-32.jpg" alt="Juice boxes on the counter in front of the play area at Mellow and Play Cafe">
-        <img class="imgWide" src="Images/MellowGlow/Mellowgllowph-28.jpg" alt="Coffee cup on the ledge in front of the play area at Mellow and Play Cafe">
-        <img class="imgWide" src="Images/MellowGlow/Mellowgllowph-29.jpg" alt="Mother and daughter pose in front of the photo backdrop">
-        <img class="imgTall" src="Images/MellowGlow/Mellowgllowph-15.jpg" alt="A light-up ball reflecting off of a table">
-        <img class="imgWide" src="Images/MellowGlow/Mellowgllowph-26.jpg" alt="The Mellow Glow party at Mellow and Play Cafe">
-        <img class="imgWide" src="Images/MellowGlow/Mellowgllowph-02.jpg" alt="Glow in the dark temporary tattoos on a table">
-
-        <h2 id="animals" class="category">Animals</h2>
-        <img class="imgWide" src="Images/Bagheera.jpeg" alt="A black cat">
-
-        <h2 id="nature" class="category">Nature and Landscapes</h2>
-        <img class="imgTall" src="Images/Tree.jpg" alt="A tree with the moon overhead">
-        <img class="imgWide" src="Images/Grass.jpg" alt="Tall grass near a river">
-
-        <h2 id="manmade" class="category">Manmade Structures and Objects</h2>
-        <img class="imgTall" src="Images/MistyRoad.jpeg" alt="A misty road at night time">
-        <img class="imgWide" src="Images/RainyRoad.jpeg" alt="A rainy road at night time">
-        <img class="imgWide" src="Images/BridgeBW.jpg" alt="Black and white photo of a bridge, with a child running">
-        <img class="imgTall" src="Images/Bench.jpg" alt="A wooden bench up close">
-        <img class="imgWide" src="Images/RainyCurb.jpeg" alt="A rainy curb up close">
-        <img class="imgWide" src="Images/Bridge.jpg" alt="A bridge">
-    </div>
+        <div id="overlay">
+            <img id="expandedImage" src="">
+            <button id="closeButton">&#10005;</button>
+        </div>
+    
+        <div id="imgContainer">
+            <div class="categoryDiv" id="eventsDiv">
+                <h2 id="events" class="category">Events</h2>
+            </div>
+            <div class="descriptionDiv">
+                <p>Valentine's Day Glow Party | Mellow and Play Cafe | February 14, 2025</p>
+            </div>
+            <img class="imgTall" src="Images/MellowGlow/Mellowgllowph-09.jpg" alt="A child jumping on a floor piano">
+            <img class="imgWide" src="Images/MellowGlow/Mellowgllowph-38.jpg" alt="The front of the Mellow and Play Cafe building">
+            <img class="imgWide" src="Images/MellowGlow/Mellowgllowph-03.jpg" alt="Mellow and Play Cafe lobby">
+            <img class="imgTall" src="Images/MellowGlow/Mellowgllowph-05.jpg" alt="A child leaving a room filled with balloons">
+            <img class="imgWide" src="Images/MellowGlow/Mellowgllowph-04.jpg" alt="Lights projected onto the ceiling near the 'pick up here' sign at Mellow and Play Cafe">
+            <img class="imgWide" src="Images/MellowGlow/Mellowgllowph-06.jpg" alt="A table set up with coloring pages and crayons">
+            <img class="imgTall" src="Images/MellowGlow/Mellowgllowph-11.jpg" alt="A child in front of the photo backdrop">
+            <img class="imgWide" src="Images/MellowGlow/Mellowgllowph-12.jpg" alt="A string of neon circles under a blacklight">
+            <img class="imgWide" src="Images/MellowGlow/Mellowgllowph-24.jpg" alt="Lights on the ceiling above the coffee ordering/pickup area at Mellow and Play Cafe">
+            <img class="imgTall" src="Images/MellowGlow/Mellowgllowph-16.jpg" alt="Father and son posing in front of the photo backdrop">
+            <img class="imgWide" src="Images/MellowGlow/Mellowgllowph-17.jpg" alt="Neon letters under a blacklight">
+            <img class="imgWide" src="Images/MellowGlow/Mellowgllowph-25.jpg" alt="Children posing in front of the photo backdrop">
+            <img class="imgTall" src="Images/MellowGlow/Mellowgllowph-32.jpg" alt="Juice boxes on the counter in front of the play area at Mellow and Play Cafe">
+            <img class="imgWide" src="Images/MellowGlow/Mellowgllowph-28.jpg" alt="Coffee cup on the ledge in front of the play area at Mellow and Play Cafe">
+            <img class="imgWide" src="Images/MellowGlow/Mellowgllowph-29.jpg" alt="Mother and daughter pose in front of the photo backdrop">
+            <img class="imgTall" src="Images/MellowGlow/Mellowgllowph-15.jpg" alt="A light-up ball reflecting off of a table">
+            <img class="imgWide" src="Images/MellowGlow/Mellowgllowph-26.jpg" alt="The Mellow Glow party at Mellow and Play Cafe">
+            <img class="imgWide" src="Images/MellowGlow/Mellowgllowph-02.jpg" alt="Glow in the dark temporary tattoos on a table">
+    
+            <div class="categoryDiv" id="animalsDiv">
+                <h2 id="animals" class="category">Animals</h2>
+            </div>
+            <img class="imgTall" src="Images/Personal/IMG_0059.jpg" alt="A black cat looking out a window">
+            <img class="imgWide" src="Images/Personal/IMG_0079.jpg" alt="A black cat looking out a window next to a basket of pillows and a table with a candle and plant on top">
+            <img class="imgWide" src="Images/Personal/IMG_0075.jpg" alt="A black cat looking out a window. A couch and a candle are also in the frame">
+            <img class="imgTall" src="Images/Personal/IMG_0182.jpg" alt="A gray cat stretching on top of a moving box">
+            <img class="imgWide" src="Images/Personal/IMG_0083.jpg" alt="A black cat with large yellow eyes looking up at the camera">
+            <img class="imgWide" src="Images/Personal/IMG_0180.jpg" alt="A gray cat with green eyes looking at the camera">
+            <img class="imgWide" src="Images/Personal/IMG_0068.jpg" alt="A black cat lookingo out a window">
+            <img class="imgWide" src="Images/Personal/IMG_0181.jpg" alt="A gray cat resting on top of a moving box">
+            <img class="imgWide" src="Images/Personal/IMG_0186.jpg" alt="A gray cat lying on a moving box">
+            <img class="imgWide" src="Images/Personal/IMG_0187.jpg" alt="A gray cat lying on a moving box and looking to the left">
+            <img class="imgWide" src="Images/Personal/IMG_0057.jpg" alt="A black cat looking out a window">
+            <img class="imgWide" src="Images/Personal/IMG_0178.jpg" alt="A gray cat looking at the camera while lying on a moving box">
+            <img class="imgWide" src="Images/Bagheera.jpeg" alt="A black cat with yellow eyes looking at the camera">
+            
+    
+            <div class="categoryDiv" id="natureDiv">
+                <h2 id="nature" class="category">Nature and Landscapes</h2>
+            </div>
+            <img class="imgTall" src="Images/Personal/IMG_7890.jpg" alt="A grassy trail through the woods">
+            <img class="imgWide" src="Images/Personal/IMG_7936.jpg" alt="A flat landscape with the sun overhead. The sun's rays are visible in the photo">
+            <img class="imgWide" src="Images/Personal/IMG_7940.jpg" alt="Trees on either side of a road">
+            <img class="imgTall" src="Images/Personal/IMG_7937.jpg" alt="Grassy landscape and a fence on the side of the road">
+            <img class="imgWide" src="Images/Personal/IMG_7958.jpg" alt="A misty road through a rural residential area with trees all around">
+            <img class="imgWide" src="Images/Personal/IMG_8010.jpeg" alt="Acorns scattered on the ground">
+            <img class="imgTall" src="Images/Personal/IMG_8238-2.jpg" alt="A fire in a backyard fire pit">
+            <img class="imgWide" src="Images/Personal/IMG_7998.jpg" alt="A misty road in the early morning. The sky is blue and trees are on either side of a road. A semi truck is approaching.">
+            <img class="imgWide" src="Images/Personal/IMG_8093.jpg" alt="Rocks on the side of a river">
+            <img class="imgTall" src="Images/Personal/IMG_8165.JPG" alt="A road with trees on either side at sunrise">
+            <img class="imgWide" src="Images/Personal/IMG_8161-2.jpg" alt="A purple sunrise over a city">
+            <img class="imgWide" src="Images/Personal/IMG_8160-2.jpg" alt="Yellow grass next to a river. Lights from buildings reflect off of the water">
+            <img class="imgWide" src="Images/Personal/IMG_8092.jpg" alt="Rocks and dried sticks next to a river">
+            <img class="imgWide" src="Images/Personal/IMG_0555.jpg" alt="An up-close image of a tree in the woods">
+            <img class="imgTall" src="Images/Tree.jpg" alt="A tree with the moon overhead">
+            <img class="imgWide" src="Images/Grass.jpg" alt="Tall grass near a river">
+    
+            <div class="categoryDiv" id="manmadeDiv">
+                <h2 id="manmade" class="category">Manmade Structures and Objects</h2>
+            </div>
+            <img class="imgTall" src="Images/Personal/IMG_0549.jpg" alt="Green cabinet doors with brass knobs">
+            <img class="imgWide" src="Images/Personal/IMG_0501.jpg" alt="Flowers on a kitchen countertop with a dining table and a window in the background">
+            <img class="imgWide" src="Images/Personal/IMG_0565.jpg" alt="A lamp against a wall">
+            <img class="imgTall" src="Images/Personal/IMG_0557.jpg" alt="The front driver's side headlight of a red 2016 Nissan Sentra">
+            <img class="imgWide" src="Images/Personal/IMG_8316.JPG" alt="A soccer ball in the snow">
+            <img class="imgWide" src="Images/Personal/IMG_0562.jpg" alt="A tail light in the dark">
+            <img class="imgTall" src="Images/Personal/IMG_8188.JPG" alt="A wood-inlay wedding band reflecting off of the Apple logo on the back of a Macbook Air">
+            <!--<img class="imgWide" src="Images/Personal/IMG_7932.jpg" alt="A rural shop or gas station in the early morning fog, before the sun comes up">-->
+            <img class="imgTall" src="Images/MistyRoad.jpeg" alt="A misty road at night time">
+            <img class="imgWide" src="Images/RainyRoad.jpeg" alt="A rainy road at night time">
+            <img class="imgWide" src="Images/BridgeBW.jpg" alt="Black and white photo of a bridge, with a child running">
+            <img class="imgTall" src="Images/Bench.jpg" alt="A wooden bench up close">
+            <img class="imgWide" src="Images/RainyCurb.jpeg" alt="A rainy curb up close">
+            <img class="imgWide" src="Images/Bridge.jpg" alt="A bridge">
+    
+            <div class="categoryDiv" id="peopleDiv">
+                <h2 id="people" class="category">People</h2>
+            </div>
+            <img class="imgTall" src="Images/Personal/IMG_8156.jpg">
+            <img class="imgWide" src="Images/Personal/IMG_0016.jpg">
+            <img class="imgWide" src="Images/Personal/IMG_0072.jpg">
+            <img class="imgTall" src="Images/Personal/IMG_8131.jpeg">
+            <img class="imgWide" src="Images/Personal/IMG_0538.jpg">
+            <img class="imgTall" src="Images/Personal/IMG_0092.jpg">
+            <img class="imgTall" src="Images/Personal/IMG_8336.jpeg">
+            <img class="imgTall" src="Images/Personal/IMG_8323.jpg">
+            <img class="imgTall" src="Images/Personal/IMG_8327.jpg">
+            <img class="imgTall" src="Images/Personal/IMG_8311.jpg">
+            <img class="imgTall" src="Images/Personal/IMG_8332.jpg">
+        </div>
+        <div id="toTopContainer">
+            <a href="#topOfPage"><button id="toTopBtn">&#8593; To Top</button></a>
+        </div>
     
     <div class="footer_div">
         <footer>
-            <h6><a href="https://jupitertechstudio.com">Jupiter Tech Studio</a>  | January 2025 | Last Updated: February 21, 2025</h6>
+            <h6><a href="https://jupitertechstudio.com">Jupiter Tech Studio</a>  | January 2025 | Last Updated: February 23, 2025</h6>
         </footer>
     </div>
 </body>
