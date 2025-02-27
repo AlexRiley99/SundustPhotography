@@ -18,7 +18,6 @@ img:hover{
     box-shadow: 5px 5px 10px rgba(250, 250, 240, 1.0), -5px -5px 10px rgb(250, 250, 240);
 }
 
-
 .categoryDiv{
     display: block;
     height: 150px;
@@ -71,6 +70,7 @@ img:hover{
     max-height: 90%;
     border: 5px solid white;
     border-radius: 10px;
+    box-shadow: none;
 }
 
 #closeButton {

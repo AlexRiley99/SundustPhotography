@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const expandedImage = document.getElementById('expandedImage');
     const closeButton = document.getElementById('closeButton');
     const galleryImages = document.querySelectorAll('#imgContainer img'); //Select the entire gallery
+    const image = document.querySelectorAll('img');
 
     //Function to expand an image
     function expandImage(imageSrc) {
