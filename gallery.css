@@ -4,6 +4,7 @@
     max-width: 500px;
     grid-column: span 1; 
     grid-row: span 2;
+    transition: box-shadow 0.15s;
 }
 .imgWide{
     height: 345px;
@@ -11,7 +12,13 @@
     max-width: 500px;
     grid-column: span 1;
     grid-row: span 1;
+    transition: box-shadow 0.15s;
 }
+img:hover{
+    box-shadow: 5px 5px 10px rgba(250, 250, 240, 1.0), -5px -5px 10px rgb(250, 250, 240);
+}
+
+
 .categoryDiv{
     display: block;
     height: 150px;
