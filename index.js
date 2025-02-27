@@ -1,11 +1,11 @@
 document.addEventListener('DOMContentLoaded', function () {
     // Array of image URLs to cycle through
     const images = [
+        "Images/Personal/IMG_7936.jpg",
+        "Images/Personal/IMG_0501.jpg",
+        "Images/Personal/IMG_0079.jpg",
         "Images/MellowGlow/Mellowgllowph-38.jpg",
-        "Images/Bagheera.jpeg",
-        "Images/MellowGlow/Mellowgllowph-24.jpg",
-        "Images/MistyRoad.jpeg",
-        "Images/Bridge.jpg"
+        "Images/Personal/IMG_8327.jpg"
     ];
 
     let currentIndex = 0; // Start at the first image
