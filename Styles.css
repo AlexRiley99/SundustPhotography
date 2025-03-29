@@ -90,6 +90,7 @@ button:active{
 
 /*FOOTER*/
 .footer_div{
+    display: block;
     margin: 10px auto;
     padding: 10px;
     border-top: 5px double var(--darkBlue); 
