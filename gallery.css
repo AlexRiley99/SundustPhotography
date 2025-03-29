@@ -20,7 +20,6 @@ img:hover{
 
 .categoryDiv{
     display: block;
-    height: 150px;
     width: 85%;
     text-align: center;
     grid-column: span 2;
@@ -32,7 +31,7 @@ img:hover{
 }
 .category{
     font-weight: bold;
-    font-size: 70px;
+    font-size: 40px;
 }
 .descriptionDiv{
     grid-column: span 2;

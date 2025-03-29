@@ -1,96 +1,143 @@
 <!DOCTYPE html>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en">
+  <head>
+    <!--Metas-->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sundust Photography - Pricing</title>
-    <link rel="stylesheet" href="pricing.css">
-    <link rel="stylesheet" href="Styles.css">
-</head>
-<body>
-    <div class="navbar_div">
-        <navbar>
-            <button class="navBtn" onclick="window.location.href='index'">Home</button>
-            <button class="navBtn" onclick="window.location.href='about'">About</button>
-            <button class="navBtn" onclick="window.location.href='gallery'">Gallery</button>
-            <button class="navBtn" onclick="window.location.href='pricing'">Pricing</button>
-        </navbar>
-    </div>
+
+    <!--Link-->
+    <link rel="stylesheet" href="pricing.css" />
+    <link rel="stylesheet" href="Styles.css" />
+  </head>
+  <body>
+    <!--NAV-->
+    <nav class="navbar">
+        <button class="navBtn" onclick="window.location.href='index'">
+          Home
+        </button>
+        <button class="navBtn" onclick="window.location.href='about'">
+          About
+        </button>
+        <button class="navBtn" onclick="window.location.href='gallery'">
+          Gallery
+        </button>
+        <button class="navBtn" onclick="window.location.href='pricing'">
+          Pricing
+        </button>
+    </nav>
+    <!--HEADER-->
     <h1>Pricing</h1>
-    <h2 id="startUp">Start Up Promo:</h2><h2 id="firstTen">The first 10 people to book an appointment will receive 25% off their session!</h2>
-    <h3 id="remaining">*Remaining: 4/10*</h3>
-    <br>
+    <p id="startUp">Start Up Promo:</p>
+    <p id="firstTen">
+      The first 10 people to book an appointment will receive 25% off their
+      session!
+    </p>
+    <p id="remaining">*Remaining: 4/10*</p>
+    <br />
     <div id="gridDiv">
-        <div id="packagesDiv">
-            <h2 id="packagesHeader">Packages</h2>
-            <h3>Headshots:</h3>
-            <h4>
-                <ul>
-                    <li>Individual: $50 - $100</li>
-                    <li>Corporate Package: $300 - $500</li>
-                </ul>
-            </h4>
-            <h3>Portraits (Individual, Family, Senior):</h3>
-            <h4>
-                <ul>
-                    <li>Standard Session (1-2hrs): $150 - $300</li>
-                    <li>Extended Session (3-4hrs): $300 - $500</li>
-                </ul>
-            </h4>
-            <h3>Events (Weddings, Parties, Corporate Events):</h3>
-            <h4>
-                <ul>
-                    <li>Hourly: $100 - $200 per hour</li>
-                    <li>Half-Day Package (4hrs): $600 - $1,200</li>
-                    <li>Full-Day Package (8hrs): $1,200 - $2,500+</li>
-                    <li>Wedding Package: $1,500 - $3,000</li>
-                </ul>
-            </h4>
-            <h3>Real Estate Photography:</h3>
-            <h4>
-                <ul>
-                    <li>Basic (up to 1,500 sq.ft.): $150 - $250</li>
-                    <li>Larger (3,000 sq.ft. and up): $250 - $500</li>
-                </ul>
-            </h4>
-            <h3>Product Photography:</h3>
-            <h4>
-                <ul>
-                    <li>Per Shot: $15 - $50 per item</li>
-                    <li>Half-Day: $300 - $500 (5 - 10 items)</li>
-                </ul>
-            </h4>
-            <br>
-            <h4>*Half of the cost of your session will be due up front, and the other half is to be paid once your images are edited and delivered.</h4>
-        </div>
-        <div id="promoDiscount">
-            <h2>Discounts</h2>
-            <h3>New Client Special:</h3>
-            <h4>20% off your first session!</h4>
-            <h5>Promo Code: "First Time 20"</h5>
-            <h3>Referral Program:</h3>
-            <h4>15% off your next session when you refer a friend + 15% off your friend's session as well!</h4>
-            <h5>Promo Code: "Sharing Is Caring 15"</h5>
-            <h3>Bundle Your Savings:</h3>
-            <h4>Book 3 sessions in advance and get 25% off all 3!</h4>
-            <h5>Promo Code: "Triple The Fun 25"</h5>
-            <h3>Group Discount:</h3>
-            <h4>Get 20% off your session when you book a group of 4 people or more!</h4>
-            <h5>Promo Code: "Squad Goals 20"</h5>
-            <h5>*When you're booking your appointment, say the associated promo code to get the discount!</h5>    
-        </div>
-        <div id="addOnDiv">
-            <h2 id="addOns">Add-Ons</h2>
-            <h4>
-                <ul>
-                    <li>Additional Images: $20 - $50 per image</li>
-                    <li>Print Packages: $100 - $400, depending on the prints included</li>
-                </ul>
-            </h4>
-        </div>
+      <div id="packagesDiv">
+        <h2 id="packagesHeader">Packages</h2>
+
+        <!--HEADSHOTS-->
+        <h3>Headshots:</h3>
+        <p>
+          <ul>
+            <li>Individual: $50 - $100</li>
+            <li>Corporate Package: $300 - $500</li>
+          </ul>
+        </p>
+        <p>Portraits (Individual, Family, Senior):</p>
+        <p>
+          <ul>
+            <li>Standard Session (1-2hrs): $150 - $300</li>
+            <li>Extended Session (3-4hrs): $300 - $500</li>
+          </ul>
+        </p>
+
+        <!--EVENTS-->
+        <h3>Events (Weddings, Parties, Corporate Events):</h3>
+        <p>
+          <ul>
+            <li>Hourly: $100 - $200 per hour</li>
+            <li>Half-Day Package (4hrs): $600 - $1,200</li>
+            <li>Full-Day Package (8hrs): $1,200 - $2,500+</li>
+            <li>Wedding Package: $1,500 - $3,000</li>
+          </ul>
+        </p>
+
+        <!--REAL ESTATE-->
+        <h3>Real Estate Photography:</h3>
+        <p>
+          <ul>
+            <li>Basic (up to 1,500 sq.ft.): $150 - $250</li>
+            <li>Larger (3,000 sq.ft. and up): $250 - $500</li>
+          </ul>
+        </p>
+
+        <!--PRODUCT-->
+        <h3>Product Photography:</h3>
+        <p>
+          <ul>
+            <li>Per Shot: $15 - $50 per item</li>
+            <li>Half-Day: $300 - $500 (5 - 10 items)</li>
+          </ul>
+        </p>
+        <br />
+        <p>
+          *Half of the cost of your session will be due up front, and the other
+          half is to be paid once your images are edited and delivered.
+        </p>
+      </div>
+
+      <!--PROMO CODES & DISCOUNTS-->
+      <div id="promoDiscount">
+        <h2>Discounts</h2>
+        <h3>New Client Special:</h3>
+        <p>20% off your first session!</p>
+        <p>Promo Code: "First Time 20"</p>
+        <h3>Referral Program:</h3>
+        <p>
+          15% off your next session when you refer a friend + 15% off your
+          friend's session as well!
+        </p>
+        <p>Promo Code: "Sharing Is Caring 15"</p>
+        <h3>Bundle Your Savings:</h3>
+        <p>Book 3 sessions in advance and get 25% off all 3!</p>
+        <p>Promo Code: "Triple The Fun 25"</p>
+        <h3>Group Discount:</h3>
+        <p>
+          Get 20% off your session when you book a group of 4 people or more!
+        </p>
+        <p>Promo Code: "Squad Goals 20"</p>
+        <p>
+          *When you're booking your appointment, say the associated promo code
+          to get the discount!
+        </p>
+      </div>
+
+      <!--ADD ONS-->
+      <div id="addOnDiv">
+        <h2 id="addOns">Add-Ons</h2>
+        <p>
+          <ul>
+            <li>Additional Images: $20 - $50 per image</li>
+            <li>
+              Print Packages: $100 - $400, depending on the prints included
+            </li>
+          </ul>
+        </p>
+      </div>
     </div>
+
+    <!--FOOTER-->
     <div class="footer_div">
-        <footer>
-            <h6><a href="https://jupitertechstudio.com">Jupiter Tech Studio</a>  | January 2025 | Last Updated: February 9, 2025</h6>
-        </footer>
+      <footer>
+        <p>
+          <a href="https://jupitertechstudio.com">Jupiter Tech Studio</a> |
+          January 2025 | Last Updated: March 28, 2025
+        </p>
+      </footer>
     </div>
-</body>
+  </body>
+</html>

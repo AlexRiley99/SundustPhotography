@@ -1,45 +1,84 @@
 <!DOCTYPE html>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en">
+  <head>
+    <!--Metas-->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sundust Photography - Home</title>
-    <meta name="description" content="Sundust Photography is passionate about capturing candid and honest moments in everyday life. Book today at a discount!">
-    <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="Styles.css">
+    <meta
+      name="description"
+      content="Sundust Photography is passionate about capturing candid and honest moments in everyday life. Book today at a discount!"
+    />
+
+    <!--Links-->
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="Styles.css" />
     <script src="index.js"></script>
-</head>
-<body>
-    <div class="navbar_div">
-        <navbar>
-            <button class="navBtn" onclick="window.location.href='index'">Home</button>
-            <button class="navBtn" onclick="window.location.href='about'">About</button>
-            <button class="navBtn" onclick="window.location.href='gallery'">Gallery</button>
-            <button class="navBtn" onclick="window.location.href='pricing'">Pricing</button>
-        </navbar>
-    </div>
+  </head>
+  <body>
+    <!--NAV-->
+    <nav class="navbar">
+      <button class="navBtn" onclick="window.location.href='index'">
+        Home
+      </button>
+      <button class="navBtn" onclick="window.location.href='about'">
+        About
+      </button>
+      <button class="navBtn" onclick="window.location.href='gallery'">
+        Gallery
+      </button>
+      <button class="navBtn" onclick="window.location.href='pricing'">
+        Pricing
+      </button>
+    </nav>
+    <!--HEADER & BANNER-->
     <h1>Sundust Photography</h1>
     <div is="bannerDiv">
-        <h3 id="banner">Book today, at a discount! See pricing for details.</h3>
+      <strong
+        ><p id="banner">
+          Book today, at a discount! See pricing for details.
+        </p></strong
+      >
     </div>
-    <br>
-    <div id="img_div" onclick="window.location.href='gallery'">
-        <img id="homePageImg" class="fade" loading="lazy" src="Images/Personal/IMG_7940.jpg">
-    </div>
-    <div id="hqAndArea_div">
-        <h3>Headquarters in Summerville, SC</h3>
-        <h4>Will travel within a 30 mile radius from HQ at no additional charge</h4>
-    </div>
-    <div id="bookNow">
-        <h3>Ready to capture your perfect moment?<br></h3>
-        Let’s make memories that last a lifetime.<br>
-        Book your session now and let's create something special!<br><br>
-        <a href="mailto:sundustphotography@gmail.com"><button>Book Now</button></a>
-    </div>
-    <br>
+    <br />
 
-    <div class="footer_div">
-        <footer>
-            <h6><a href="https://jupitertechstudio.com">Jupiter Tech Studio</a>  | January 2025 | Last Updated: February 21, 2025</h6>
-        </footer>
+    <!--CHANGING IMAGE-->
+    <div id="img_div" onclick="window.location.href='gallery'">
+      <img
+        id="homePageImg"
+        class="fade"
+        loading="lazy"
+        src="Images/Personal/IMG_7940.jpg"
+      />
     </div>
-</body>
+
+    <!--TEXT-->
+    <div id="hqAndArea_div">
+      <p>Headquarters in Summerville, SC</p>
+      <p>Will travel within a 30 mile radius from HQ at no additional charge</p>
+    </div>
+
+    <!--BOOK NOW BUTTON-->
+    <div id="bookNow">
+      <strong
+        ><p>Ready to capture your perfect moment?<br /></p
+      ></strong>
+      Let’s make memories that last a lifetime.<br />
+      Book your session now and let's create something special!<br /><br />
+      <a href="mailto:sundustphotography@gmail.com"
+        ><button>Book Now</button></a
+      >
+    </div>
+    <br />
+
+    <!--FOOTER-->
+    <div class="footer_div">
+      <footer>
+        <p>
+          <a href="https://jupitertechstudio.com">Jupiter Tech Studio</a> |
+          January 2025 | Last Updated: March 28, 2025
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>

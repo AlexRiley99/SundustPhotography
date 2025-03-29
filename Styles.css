@@ -1,3 +1,4 @@
+/*ENTIRE PAGE*/
 :root{
     --darkBlue: #02285e;
     --button_hover: #023e86;
@@ -14,9 +15,7 @@ html, body{
     height: 100%;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
-
-body{
-    padding-top: 60px;
+html{
     background-image: 
         radial-gradient(circle, 
                     rgb(249, 213, 152, 0.75) 70%, 
@@ -27,9 +26,28 @@ body{
     height: 100%; /*full viewport height*/
     background-repeat: no-repeat; /*no repeating background*/
     background-attachment: fixed;
+    overflow: hidden;
+}
+body{
+    padding-top: 70px;
+    overflow: auto;
 }
 
-.navbar_div{
+h1{
+    font-size: 50px;
+    text-align: center;
+    text-decoration: underline;
+    font-weight: bold;
+    color: var(--darkBlue);
+}
+
+img{
+    border: 5px double var(--darkBlue);
+    border-radius: 5px;
+}
+
+/*NAVIGATION & BUTTONS*/
+.navbar{
     position: fixed;
     top: 0;
     left: 0;
@@ -44,20 +62,6 @@ body{
     height: 100%;
     width: 24%;
     margin: 1px;
-}
-
-@media (max-width: 768px){
-    .navbar_div{
-        grid-template-columns: 1fr; /*Stack buttons in one column on small screens*/
-    }
-    .navBtn{
-        width: 100%;
-        height: auto; 
-        margin: auto;
-    }
-    body{
-        padding-top: 160px;
-    }
 }
 
 button{
@@ -83,16 +87,12 @@ button:active{
     transition: background-color 0.15s ease;
 }
 
-h1{
-    text-align: center;
-    text-decoration: underline;
-    font-weight: bold;
-    color: var(--darkBlue);
-}
 
+/*FOOTER*/
 .footer_div{
+    display: block;
     margin: 10px auto;
-    padding: 0;
+    padding: 10px;
     border-top: 5px double var(--darkBlue); 
 }
 footer{
@@ -108,7 +108,20 @@ footer a{
     color: var(--darkBlue);
 }
 
-img{
-    border: 5px double var(--darkBlue);
-    border-radius: 5px;
+/*MEDIA QUERIES*/
+@media (max-width: 600px){
+    .navbar{
+        grid-template-columns: 1fr; /*Stack buttons in one column on small screens*/
+    }
+    .navBtn{
+        width: 100%;
+        height: auto; 
+        margin: auto;
+    }
+    body{
+        padding-top: 160px;
+    }
+    html, body{
+        overflow: hidden;
+    }
 }

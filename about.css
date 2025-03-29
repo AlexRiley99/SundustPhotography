@@ -1,13 +1,17 @@
 #aboutDiv{
+    font-size: 20px;
     padding-left: 20%;
     padding-right: 20%;
 }
 #hiImDerek, #quote{
     color: rgb(83, 33, 2);
     font-style: italic;
+    font-weight: 800;
 }
 
 #contactInfoDiv{
+    font-weight: bold;
+    font-size: 15px;
     border: 5px double #02285e;
     text-align: center;
     margin: auto;
