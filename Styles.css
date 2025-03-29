@@ -90,12 +90,12 @@ button:active{
 
 /*FOOTER*/
 .footer_div{
-    display: block;
     margin: 10px auto;
     padding: 10px;
     border-top: 5px double var(--darkBlue); 
 }
 footer{
+    display: block;
     text-align: center;
     margin: auto;
     bottom: 0;
