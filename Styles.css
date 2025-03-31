@@ -77,14 +77,13 @@ button{
     font-weight: bold;
     font-size: 90%;
     opacity: 0.6;
+    transition: background-color 0.15s ease;transition: background-color 0.15s ease;
 }
 button:hover{
     background-color: var(--button_hover);
-    transition: background-color 0.15s ease;
 }
 button:active{
     background-color: var(--button_active);
-    transition: background-color 0.15s ease;
 }
 
 
