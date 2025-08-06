@@ -1,5 +1,5 @@
 /*ENTIRE PAGE*/
-:root{
+:root {
     --darkBlue: #02285e;
     --button_hover: #023e86;
     --button_active: #6a98d1;
@@ -9,31 +9,38 @@
     --links: #030247;
 }
 
-html, body{
+html,
+body {
     margin: 0;
     padding: 0;
     height: 100%;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
-html{
-    background-image: 
-        radial-gradient(circle, 
-                    rgb(249, 213, 152, 0.75) 70%, 
-                    rgb(85, 48, 3, 0.9) 100%),
-                        url('Images/filmGrain.jpg'); /*circular gradient overlayed onto image*/
+
+html {
+    background-image:
+        radial-gradient(circle,
+            rgb(249, 213, 152, 0.75) 70%,
+            rgb(85, 48, 3, 0.9) 100%),
+        url('Images/filmGrain.jpg');
+    /*circular gradient overlayed onto image*/
     background-size: cover;
-    background-position: center; /*background covers the entire screen and gradient is centered*/
-    height: 100%; /*full viewport height*/
-    background-repeat: no-repeat; /*no repeating background*/
+    background-position: center;
+    /*background covers the entire screen and gradient is centered*/
+    height: 100%;
+    /*full viewport height*/
+    background-repeat: no-repeat;
+    /*no repeating background*/
     background-attachment: fixed;
     overflow: hidden;
 }
-body{
+
+body {
     padding-top: 70px;
     overflow: auto;
 }
 
-h1{
+h1 {
     font-size: 50px;
     text-align: center;
     text-decoration: underline;
@@ -41,30 +48,31 @@ h1{
     color: var(--darkBlue);
 }
 
-img{
+img {
     border: 5px double var(--darkBlue);
     border-radius: 5px;
 }
 
 /*NAVIGATION & BUTTONS*/
-.navbar{
+.navbar {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 1000;
     text-align: center;
-    margin: auto;
-    border-bottom:5px double var(--darkBlue);
+    margin: 1rem auto;
+    border-bottom: 5px double var(--darkBlue);
     padding: 5px;
 }
-.navBtn{
+
+.navBtn {
     height: 100%;
     width: 24%;
     margin: 1px;
 }
 
-button{
+button {
     background-color: var(--darkBlue);
     color: var(--button_text);
     border-radius: 5px;
@@ -77,24 +85,28 @@ button{
     font-weight: bold;
     font-size: 90%;
     opacity: 0.6;
-    transition: background-color 0.15s ease;transition: background-color 0.15s ease;
+    transition: background-color 0.15s ease;
+    transition: background-color 0.15s ease;
 }
-button:hover{
+
+button:hover {
     background-color: var(--button_hover);
 }
-button:active{
+
+button:active {
     background-color: var(--button_active);
 }
 
 
 /*FOOTER*/
-.footer_div{
+.footer_div {
     display: block;
     margin: 10px auto;
     padding: 10px;
-    border-top: 5px double var(--darkBlue); 
+    border-top: 5px double var(--darkBlue);
 }
-footer{
+
+footer {
     display: block;
     text-align: center;
     margin: auto;
@@ -103,25 +115,31 @@ footer{
     padding-bottom: 10px;
     color: var(--darkBlue);
 }
-footer a{
+
+footer a {
     text-decoration: none;
     color: var(--darkBlue);
 }
 
 /*MEDIA QUERIES*/
-@media (max-width: 600px){
-    .navbar{
-        grid-template-columns: 1fr; /*Stack buttons in one column on small screens*/
+@media (max-width: 600px) {
+    .navbar {
+        grid-template-columns: 1fr;
+        /*Stack buttons in one column on small screens*/
     }
-    .navBtn{
+
+    .navBtn {
         width: 100%;
-        height: auto; 
+        height: auto;
         margin: auto;
     }
-    body{
+
+    body {
         padding-top: 160px;
     }
-    html, body{
+
+    html,
+    body {
         overflow: hidden;
     }
 }
